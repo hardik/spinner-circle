@@ -1,0 +1,21 @@
+{
+  "name": "spinner-circle",
+  "version": "1.0.0",
+  "description": "rotating circle spinner for web apps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardik/spinner-circle.git"
+  },
+  "keywords": [
+    "spinner",
+    "circle",
+    "loader",
+    "css"
+  ],
+  "author": "Hardik Jagda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hardik/spinner-circle/issues"
+  },
+  "homepage": "https://github.com/hardik/spinner-circle#readme"
+}
