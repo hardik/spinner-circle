@@ -1,0 +1,9 @@
+//== Colors
+$brand-primary:                     #f37430;
+
+//== Spinner Circle
+$diameter-counter:                  8px;
+$spinner-circle-default-diameter:   $diameter-counter * 3;
+$spinner-circle-border-width:       2px;
+$spinner-circle-speed:              1s;
+$spinner-circle-color:              $brand-primary;
