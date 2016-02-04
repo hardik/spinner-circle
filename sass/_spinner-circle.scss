@@ -1,0 +1,99 @@
+// Spinner Circle
+// --------------
+
+.spinner-circle,
+.spinner-circle > div {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.spinner-circle {
+  width: $spinner-circle-default-diameter;
+  height: $spinner-circle-default-diameter;
+  display: block;
+
+  &.spinner-inline {
+    display: inline-block;
+  }
+
+  > div {
+    display: inline-block;
+    width: $spinner-circle-default-diameter;
+    height: $spinner-circle-default-diameter;
+    background: transparent;
+    border: $spinner-circle-border-width solid $spinner-circle-color;
+    border-bottom-color: transparent;
+    border-radius: 100%;
+    animation: circle-rotate $spinner-circle-speed linear infinite;
+  }
+
+  &.spinner-xs {
+    width: $diameter-counter;
+    height: $diameter-counter;
+
+    > div {
+      width: $diameter-counter;
+      height: $diameter-counter;;
+      border-width: $spinner-circle-border-width / 2;
+    }
+  }
+
+  &.spinner-sm {
+    width: $diameter-counter * 2;
+    height: $diameter-counter * 2;
+
+    > div {
+      width: $diameter-counter * 2;
+      height: $diameter-counter * 2;
+      border-width: $spinner-circle-border-width / 2;
+    }
+  }
+
+  &.spinner-lg {
+    width: $diameter-counter * 4;
+    height: $diameter-counter * 4;
+
+    > div {
+      width: $diameter-counter * 4;
+      height: $diameter-counter * 4;
+      border-width: $spinner-circle-border-width;
+    }
+  }
+
+  &.spinner-2x {
+    width: $spinner-circle-default-diameter * 2;
+    height: $spinner-circle-default-diameter * 2;
+
+    > div {
+      width: $spinner-circle-default-diameter * 2;
+      height: $spinner-circle-default-diameter * 2;
+      border-width: $spinner-circle-border-width * 2;
+    }
+  }
+
+  &.spinner-3x {
+    width: $spinner-circle-default-diameter * 3;
+    height: $spinner-circle-default-diameter * 3;
+
+    > div {
+      width: $spinner-circle-default-diameter * 3;
+      height: $spinner-circle-default-diameter * 3;
+      border-width: $spinner-circle-border-width * 3;
+    }
+  }
+}
+
+
+// Keyframes
+
+@keyframes circle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
