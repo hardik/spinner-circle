@@ -7,7 +7,7 @@ module.exports = {
     },
 
     fileNames: {
-        sassMain: 'app.scss',
-        appCSS: 'app.css'
+        sassMain: 'spinner-circle.scss',
+        appCSS: 'spinner-circle.css'
     }
 };
